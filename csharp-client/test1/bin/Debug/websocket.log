@@ -1,0 +1,19 @@
+2018/1/15 16:27:30|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                         GET /wss/WebSocketHandler.ashx?code=fad1a463aa2aec68b0381916a05d61cc HTTP/1.1
+                         User-Agent: websocket-sharp/1.0
+                         Host: ks.risid.com
+                         Upgrade: websocket
+                         Connection: Upgrade
+                         Sec-WebSocket-Key: 7F4cv3M+J0s2sZFptkTj6A==
+                         Sec-WebSocket-Version: 13
+2018/1/15 16:27:30|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                         HTTP/1.1 101 Switching Protocols
+                         Cache-Control: private
+                         Upgrade: Websocket
+                         Server: Microsoft-IIS/8.5
+                         X-AspNet-Version: 4.0.30319
+                         Sec-WebSocket-Accept: /q5/1/wraxBXyqIRR3MB2GDkqF0=
+                         Connection: Upgrade
+                         X-Powered-By: ASP.NET
+                         Date: Mon, 15 Jan 2018 08:27:31 GMT
+2018/1/15 16:28:08|Trace|WebSocket.close:0|Begin closing the connection.

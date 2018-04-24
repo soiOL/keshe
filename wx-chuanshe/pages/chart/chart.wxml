@@ -1,0 +1,21 @@
+<!--pages/chart.wxml-->
+<view class='container'>
+
+  <radio-group class='flex-center date-group' bindchange="timeChange">
+    <radio checked class='date-select' value='live'>
+      <label>实时</label>
+    </radio>
+    <radio class='date-select' value='ahour'>
+      <label>一小时内</label>
+    </radio>
+    <radio class='date-select' value='aday'>
+      <label>一天内</label>
+    </radio>
+  </radio-group>
+
+
+  <view class='weui-cells'>
+    <canvas canvas-id="{{chart.content}}" wx:for="{{chartList}}" wx:for-index="idx" wx:for-item='chart' wx:key='chart.id' bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler" class="canvas" id='{{chart.content}}'></canvas>
+  </view>
+
+</view>

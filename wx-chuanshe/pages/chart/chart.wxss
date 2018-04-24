@@ -1,0 +1,28 @@
+/* pages/chart.wxss */
+
+.flex-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-group{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background: #fff;
+  height: 100rpx;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+.date-select{
+  margin-left: 20rpx;
+}
+.canvas {
+    width: 100%;
+    height: 500rpx;
+    margin-top: 100rpx;
+}
+.chart{
+  width: 100%;
+  height: 800rpx;
+}

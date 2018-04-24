@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-x="true" class="scroll-view_H">
+    <view class='device device-{{deviceStatus[device.deviceId]?"connect":"disconnect"}} {{deviceList[devicePos]["deviceId"]==device.deviceId?"select":""}} scroll-view-item_H' wx:for="{{deviceList}}" wx:key="deviceId" wx:for-index="idx" wx:for-item='device'
+      bindtap="selectDevice" bindlongpress="deleteDevice" id='{{idx}}'>
+      <label class='list-text'>设备{{device.id}}</label>
+    </view>
+    <view class='device device-add scroll-view-item_H' bindtap='addDevice'>
+      <label class='add-icon'>+</label>
+    </view>
+  </scroll-view>
+
+  <view wx:if="{{deviceList.length != 0}}">
+    <view class="weui-cells">
+      <text class="weui-cell">设备号：{{deviceList[devicePos].deviceId}}</text>
+      <text class="weui-cell">光强：{{intensity}} lux</text>
+      <text class="weui-cell">温度：{{tem}} ℃</text>
+      <text class="weui-cell">湿度：{{humidity}} %</text>
+      <view class="weui-cell"><button type="primary" class="btn" bindtap='openChart'>打开图表</button></view>
+    </view>
+    <view class='weui-cells'>
+      <switch checked='{{swMap["Fan"]}}' class='weui-cell' id='swFan' bindchange="swChange">
+        风扇开关
+      </switch>
+      <switch checked='{{swMap["Led1"]}}' class='weui-cell' id='swLed1' bindchange="swChange">
+        Led1开关
+      </switch>
+      <switch checked='{{swMap["Led2"]}}' class='weui-cell' id='swLed2' bindchange="swChange">
+        Led2开关
+      </switch>
+      <switch checked='{{swMap["Led3"]}}' class='weui-cell' id='swLed3' bindchange="swChange">
+        Led3开关
+      </switch>
+    </view>
+
+    <view class='weui-cells footer'>
+      <view class='weui-cell'>
+        <image class='status-cell' src='../../image/{{sensorStatus["Tah"] ? "selected.png": "alarm.png"}}' /> 温湿度传感器
+      </view>
+      <view class='weui-cell'>
+        <image class='status-cell' src='../../image/{{sensorStatus["Is"] ? "selected.png": "alarm.png"}}' /> 光敏传感器
+      </view>
+    </view>
+
+  </view>
+</view>

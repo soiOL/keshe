@@ -1,0 +1,95 @@
+/**index.wxss**/
+
+.tip-text {
+  color: #9f9f9f;
+}
+
+.status-cell {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 10rpx;
+}
+
+.status-cell-con {
+  background-color: #3cc51f;
+}
+
+.status-cell-disc {
+  background: "../image/alarm.png";
+}
+.footer{
+  margin-bottom: 20rpx;
+}
+.status-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.btn {
+  width: 200rpx;
+  margin:0rpx;
+  font-size: 30rpx;
+
+}
+
+.device-list {
+  pad: 20rpx;
+  border-top: 3rpx solid #fff;
+  border-bottom: 3rpx solid #fff;
+}
+
+.scroll-view-item_H {
+  display: inline-flex;
+}
+
+.scroll-view_H {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.device {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 10rpx;
+  padding: 6prx;
+  border-radius: 10rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-disconnect {
+  border: 1rpx solid #fff;
+  background-color: #e69c9c;
+}
+
+.device-disconnect.select {
+  background-color: #d14747;
+}
+
+.device-add {
+  border: 1rpx solid #3cc51f;
+  background-color: #fff;
+}
+
+.add-icon {
+  color: #3cc51f;
+}
+
+.device-connect {
+  border: 1rpx solid #fff;
+  background-color: #9de49c;
+}
+
+.device-connect.select {
+  border: 1rpx solid #fff;
+  background-color: #09bb07;
+}
+
+.list-text {
+  color: #fff;
+  text-align: center;
+}
+
+
